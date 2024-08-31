@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NineProject</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            height: 100%;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #e8491d;
+        }
+        .hero {
+            background: url('https://plus.unsplash.com/premium_photo-1669278646170-04eae88cb3e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            z-index: 10;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #e8491d;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background: #ff6347;
+        }
+        .services {
+            padding: 4rem 0;
+            background: #f4f4f4;
+        }
+        .services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-card i {
+            font-size: 3rem;
+            color: #e8491d;
+            margin-bottom: 1rem;
+        }
+        .about {
+            padding: 4rem 0;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .about-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        .about-image {
+            flex: 1;
+        }
+        .about-image img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="porfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Nine Project Studio</h1>
+                <p>Tu sonido, Nuestra pasión</p>
+                <a href="contact.html" class="btn">Reserva una sesión</a>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-microphone"></i>
+                        <h3>Grabación</h3>
+                        <p>Instalaciones de grabación de última generación para una captura de audio impecable.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-sliders-h"></i>
+                        <h3>Mezclado</h3>
+                        <p>Mezcla experta para aportar equilibrio y claridad a tus pistas.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-volume-up"></i>
+                        <h3>Mastering</h3>
+                        <p>Toque final para garantizar que su música suene genial en todos los sistemas.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-guitar"></i>
+                        <h3>Producción</h3>
+                        <p>Producción musical de servicio completo para hacer realidad su visión.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Sobre Nine Project Studio</h2>
+                        <p>Con más de 20 años de experiencia en la industria de la música, Nine Project Studio ha sido el lugar de nacimiento de innumerables discos de éxito y actuaciones legendarias. Nuestro equipo de profesionales apasionados se dedica a ayudar a los artistas a lograr su visión creativa y producir grabaciones de clase mundial.</p>
+                        <p>Desde nuestras salas con tratamiento acústico hasta nuestros equipos antiguos y modernos, brindamos el ambiente perfecto para que su música prospere. Ya seas solista, banda o productor, estamos aquí para elevar tu sonido a nuevas alturas.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://soundwavesstudios.com/wp-content/uploads/2023/03/%C2%BFQue-servicios-ofrece-un-estudio-de-grabacion.jpg" alt="Nine Project Studio main room" width="500" height="333">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nine Project Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const header = document.querySelector('header');
+            const heroHeight = document.querySelector('.hero').offsetHeight;
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > heroHeight - 100) {
+                    header.style.backgroundColor = 'rgba(26, 26, 26, 0.9)';
+                } else {
+                    header.style.backgroundColor = 'transparent';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<html><head>
+<title>NineProject</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    header {
+        background-color: #1a1a1a;
+        color: #fff;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav ul li {
+        margin-left: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: #e8491d;
+    }
+    .portfolio-header {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://example.com/studio-background.jpg') no-repeat center center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0 50px;
+    }
+    .portfolio-header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 4rem 0;
+    }
+    .portfolio-item {
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .portfolio-item:hover {
+        transform: translateY(-5px);
+    }
+    .portfolio-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .portfolio-item-content {
+        padding: 1rem;
+    }
+    .portfolio-item h3 {
+        margin-top: 0;
+    }
+    .portfolio-item p {
+        margin-bottom: 0.5rem;
+    }
+    .portfolio-item .genre {
+        font-style: italic;
+        color: #777;
+    }
+    .portfolio-item .listen-btn {
+        display: inline-block;
+        background: #e8491d;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+    }
+    .portfolio-item .listen-btn:hover {
+        background: #ff6347;
+    }
+    footer {
+        background: #1a1a1a;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="porfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio-header">
+            <div class="container">
+                <h1>Nuestro Portfolio</h1>
+                <p>Explore la diversa gama de proyectos en los que hemos tenido el placer de trabajar</p>
+            </div>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1605701858102-ddbc4eb41d4f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Electric Dreams album cover, neon cityscape at night" width="300" height="200">
+                    <div class="portfolio-item-content">
+                        <h3>Electric Dreams</h3>
+                        <p>Artist: Neon Nights</p>
+                        <p class="genre">Genre: Synthwave</p>
+                        <a href="https://example.com/listen/electric-dreams" class="listen-btn">Escuchar</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1625343609316-16642640f244?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Acoustic Serenity album cover, misty forest scene" width="300" height="200">
+                    <div class="portfolio-item-content">
+                        <h3>Acoustic Serenity</h3>
+                        <p>Artist: Sarah Meadows</p>
+                        <p class="genre">Genre: Folk</p>
+                        <a href="https://example.com/listen/acoustic-serenity" class="listen-btn">Escuchar</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1527813972756-2890936000e9?q=80&w=1891&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Urban Pulse album cover, graffiti wall in city" width="300" height="200">
+                    <div class="portfolio-item-content">
+                        <h3>Urban Pulse</h3>
+                        <p>Artist: The Beat Collective</p>
+                        <p class="genre">Genre: Hip Hop</p>
+                        <a href="https://example.com/listen/urban-pulse" class="listen-btn">Escuchar</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1466152187244-1cb1ac3dec04?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cosmic Voyage album cover, space scene with planets" width="300" height="200">
+                    <div class="portfolio-item-content">
+                        <h3>Cosmic Voyage</h3>
+                        <p>Artist: Stellar Sounds</p>
+                        <p class="genre">Genre: Ambient</p>
+                        <a href="https://example.com/listen/cosmic-voyage" class="listen-btn">Escuchar</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1508073890584-e7aa13246994?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rock Revolution album cover, electric guitar silhouette" width="300" height="200">
+                    <div class="portfolio-item-content">
+                        <h3>Rock Revolution</h3>
+                        <p>Artist: Thunder Strike</p>
+                        <p class="genre">Genre: Hard Rock</p>
+                        <a href="https://example.com/listen/rock-revolution" class="listen-btn">Escuchar</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jazz Fusion album cover, abstract musical instruments" width="300" height="200">
+                    <div class="portfolio-item-content">
+                        <h3>Jazz Fusion</h3>
+                        <p>Artist: The Smooth Quartet</p>
+                        <p class="genre">Genre: Jazz</p>
+                        <a href="https://example.com/listen/jazz-fusion" class="listen-btn">Escuchar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nine Project Studio. Todos los derechos rervados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const header = document.querySelector('header');
+            const portfolioHeader = document.querySelector('.portfolio-header');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > portfolioHeader.offsetHeight - 100) {
+                    header.style.backgroundColor = 'rgba(26, 26, 26, 0.9)';
+                } else {
+                    header.style.backgroundColor = 'transparent';
+                }
+            });
+
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            portfolioItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'scale(1.05)';
+                });
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
